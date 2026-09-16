@@ -3,6 +3,99 @@ layout: null
 title: "Delaney Reed"
 ---
 
-# Delaney Reed
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Basic document metadata and the site's stylesheet. -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Delaney Reed | Technical Artist</title>
+		<meta name="description" content="Delaney Reed is a technical artist focused on rigging, tools, and pipeline work.">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- Persistent identity and navigation sidebar. -->
+		<div class="site-shell">
+			<!-- Profile card and page navigation remain visible beside the content. -->
+			<aside class="sidebar">
+				<a class="wordmark" href="./">DR<span>.</span></a>
+				<div class="profile-block">
+					<div class="portrait-placeholder portrait-sidebar" role="img" aria-label="Portrait placeholder">
+						<span>Portrait</span>
+						<small>Add image to assets/images/profile.jpg</small>
+					</div>
+					<p class="profile-name">Delaney Reed</p>
+					<p class="profile-role">Technical Artist<br>Rigging / Tools / Pipeline</p>
+					<p class="profile-description">Building the systems behind the image.</p>
+				</div>
+				<p class="sidebar-label">Explore</p>
+				<nav aria-label="Main navigation">
+					<a href="#top"><span>01</span> Home</a>
+					<a href="#reel"><span>02</span> Reel</a>
+					<a href="#about"><span>03</span> About</a>
+					<a href="#contact"><span>04</span> Contact</a>
+				</nav>
+				<div class="sidebar-footer">
+					<a href="mailto:hello@delaneyreed.com">Email</a>
+					<a href="#">LinkedIn</a>
+					<a href="#">GitHub</a>
+					<span>&copy; 2026</span>
+				</div>
+			</aside>
 
-Animation and technical art portfolio.
+			<!-- Main portfolio content stays separate from the sidebar. -->
+			<main id="top">
+			<!-- Intro section establishes the portfolio's focus and tone. -->
+			<section class="intro" aria-labelledby="intro-title">
+				<p class="eyebrow">Technical artist / rigging / tools</p>
+				<h1 id="intro-title">Building the systems<br><em>behind the image.</em></h1>
+				<div class="intro-bottom">
+					<p class="intro-copy">I create rigging systems, artist tools, and production pipelines that make ambitious work possible.</p>
+					<a class="text-link" href="#reel">Watch the reel <span aria-hidden="true">&#8595;</span></a>
+				</div>
+			</section>
+
+			<!-- Main reel area; replace the placeholder with the finished video later. -->
+			<section class="reel-section" id="reel" aria-labelledby="reel-title">
+				<div class="section-heading">
+					<p class="eyebrow">01 / Selected introduction</p>
+					<h2 id="reel-title">Showreel</h2>
+				</div>
+				<div class="reel-placeholder">
+					<span class="play-mark" aria-hidden="true">&#9654;</span>
+					<p>Showreel video</p>
+					<span class="placeholder-note">Add your reel to assets/reel.mp4</span>
+				</div>
+			</section>
+
+			<!-- Short professional biography and working focus. -->
+			<section class="about-section" id="about" aria-labelledby="about-title">
+				<div class="section-heading">
+					<p class="eyebrow">02 / Profile</p>
+					<h2 id="about-title">About</h2>
+				</div>
+				<div class="about-grid">
+					<div class="about-copy">
+						<p class="large-copy">I am Delaney Reed, a technical artist working where creative ambition meets practical systems.</p>
+						<p>My focus is rigging, tools, and pipeline work: making workflows clearer, more flexible, and more expressive for the people using them.</p>
+						<a class="text-link" href="#contact">Get in touch <span aria-hidden="true">&#8599;</span></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Final call to contact Delaney about potential work. -->
+			<section class="contact-section" id="contact" aria-labelledby="contact-title">
+				<p class="eyebrow">03 / Next conversation</p>
+				<h2 id="contact-title">Have a system<br><em>worth building?</em></h2>
+				<a class="email-link" href="mailto:hello@delaneyreed.com">hello@delaneyreed.com</a>
+			</section>
+			</main>
+		</div>
+
+		<!-- Small footer shown below the main portfolio content. -->
+		<footer class="site-footer">
+			<span>&copy; 2026 Delaney Reed</span>
+			<span>Technical artist</span>
+		</footer>
+	</body>
+</html>
