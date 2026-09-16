@@ -36,6 +36,7 @@ title: "Delaney Reed"
 					<a href="#contact"><span>04</span> Contact</a>
 				</nav>
 				<div class="sidebar-footer">
+					<a href="assets/resume.pdf" download>Resume</a>
 					<a href="mailto:hello@delaneyreed.com">Email</a>
 					<a href="#">LinkedIn</a>
 					<a href="#">GitHub</a>
@@ -45,17 +46,7 @@ title: "Delaney Reed"
 
 			<!-- Main portfolio content stays separate from the sidebar. -->
 			<main id="top">
-			<!-- Intro section establishes the portfolio's focus and tone. -->
-			<section class="intro" aria-labelledby="intro-title">
-				<p class="eyebrow">Technical artist / rigging / tools</p>
-				<h1 id="intro-title">Building the systems<br><em>behind the image.</em></h1>
-				<div class="intro-bottom">
-					<p class="intro-copy">I create rigging systems, artist tools, and production pipelines that make ambitious work possible.</p>
-					<a class="text-link" href="#reel">Watch the reel <span aria-hidden="true">&#8595;</span></a>
-				</div>
-			</section>
-
-			<!-- Main reel area; replace the placeholder with the finished video later. -->
+			<!-- The reel leads the page so visitors see the work immediately. -->
 			<section class="reel-section" id="reel" aria-labelledby="reel-title">
 				<div class="section-heading">
 					<p class="eyebrow">01 / Selected introduction</p>
@@ -65,6 +56,25 @@ title: "Delaney Reed"
 					<span class="play-mark" aria-hidden="true">&#9654;</span>
 					<p>Showreel video</p>
 					<span class="placeholder-note">Add your reel to assets/reel.mp4</span>
+				</div>
+				<!-- Expandable notes let visitors explore the reel without leaving the page. -->
+				<div class="reel-breakdown">
+					<div class="breakdown-heading">
+						<p class="eyebrow">Reel breakdown</p>
+						<p class="breakdown-intro">A closer look at the systems and decisions behind the work.</p>
+					</div>
+					<details>
+						<summary><span>01</span> Rigging systems</summary>
+						<p>Describe the character, creature, or mechanical rig shown here, including the problem it solved and the result it enabled.</p>
+					</details>
+					<details>
+						<summary><span>02</span> Artist tools</summary>
+						<p>Explain the tools or workflows you built to help artists work more quickly, consistently, or creatively.</p>
+					</details>
+					<details>
+						<summary><span>03</span> Pipeline work</summary>
+						<p>Use this space for the production context, technical decisions, and collaboration that supported the final result.</p>
+					</details>
 				</div>
 			</section>
 
@@ -78,16 +88,9 @@ title: "Delaney Reed"
 					<div class="about-copy">
 						<p class="large-copy">I am Delaney Reed, a technical artist working where creative ambition meets practical systems.</p>
 						<p>My focus is rigging, tools, and pipeline work: making workflows clearer, more flexible, and more expressive for the people using them.</p>
-						<a class="text-link" href="#contact">Get in touch <span aria-hidden="true">&#8599;</span></a>
+						<a class="text-link" href="mailto:hello@delaneyreed.com">Get in touch <span aria-hidden="true">&#8599;</span></a>
 					</div>
 				</div>
-			</section>
-
-			<!-- Final call to contact Delaney about potential work. -->
-			<section class="contact-section" id="contact" aria-labelledby="contact-title">
-				<p class="eyebrow">03 / Next conversation</p>
-				<h2 id="contact-title">Have a system<br><em>worth building?</em></h2>
-				<a class="email-link" href="mailto:hello@delaneyreed.com">hello@delaneyreed.com</a>
 			</section>
 			</main>
 		</div>

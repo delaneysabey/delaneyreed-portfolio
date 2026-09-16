@@ -53,8 +53,7 @@ a {
 /* Accent color is shared by labels, actions, and highlighted text. */
 .wordmark span,
 .eyebrow,
-.text-link,
-.email-link {
+.text-link {
   color: var(--accent);
 }
 
@@ -151,14 +150,12 @@ nav a span {
 }
 
 /* Inline actions use the same unobtrusive editorial treatment. */
-.text-link,
-.email-link {
+.text-link {
   text-decoration: none;
 }
 
 nav a:hover,
-.text-link:hover,
-.email-link:hover {
+.text-link:hover {
   text-decoration: none;
 }
 
@@ -198,15 +195,6 @@ main > section {
   width: 100%;
 }
 
-/* Hero introduction gives the homepage its first visual statement. */
-.intro {
-  min-height: 76vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 96px 0 112px;
-}
-
 /* Uppercase labels provide small structural signposts. */
 .eyebrow {
   margin: 0 0 24px;
@@ -217,47 +205,20 @@ main > section {
   text-transform: uppercase;
 }
 
-/* Reset heading and paragraph spacing before component-specific rules. */
-h1,
-h2,
+/* Reset paragraph spacing before component-specific rules. */
 p {
   margin-top: 0;
 }
 
 /* Display headings use a restrained editorial rhythm. */
-h1,
 h2 {
   font-weight: 400;
   line-height: 0.98;
 }
 
-/* The main homepage statement is intentionally the largest text. */
-h1 {
-  max-width: 950px;
-  margin-bottom: 64px;
-  font-size: clamp(3.5rem, 9vw, 8.4rem);
-  letter-spacing: -0.04em;
-}
-
-h1 em,
 h2 em {
   color: var(--accent);
   font-style: italic;
-}
-
-/* Supporting copy and the reel link share the bottom of the intro. */
-.intro-bottom {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
-  max-width: 720px;
-}
-
-.intro-copy {
-  max-width: 340px;
-  margin-bottom: 0;
-  font-size: 1.15rem;
 }
 
 /* Small uppercase action links contrast with the serif body copy. */
@@ -273,7 +234,7 @@ h2 em {
 /* Shared spacing for the reel and about sections. */
 .reel-section,
 .about-section {
-  padding: 96px 0;
+  padding: 56px 0 96px;
   border-top: 1px solid var(--line);
 }
 
@@ -324,6 +285,554 @@ h2 {
 .reel-placeholder p {
   margin-bottom: 6px;
   font-size: 1.6rem;
+}
+
+/* Reel notes use native disclosure controls, so they work without JavaScript. */
+.reel-breakdown {
+  margin-top: 56px;
+}
+
+.breakdown-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.breakdown-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.breakdown-intro {
+  max-width: 300px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.reel-breakdown details {
+  border-top: 1px solid var(--line);
+}
+
+.reel-breakdown details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.reel-breakdown summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+.reel-breakdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.reel-breakdown summary::after {
+  color: var(--accent);
+  content: "+";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.reel-breakdown details[open] summary::after {
+  content: "-";
+}
+
+.reel-breakdown summary span {
+  margin-right: 18px;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.reel-breakdown details > p {
+  max-width: 560px;
+  margin: -2px 48px 22px 38px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Notes explain where placeholder media should be added. */
+.placeholder-note,
+.portrait-placeholder small {
+  color: #aaa59b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* About content can expand into a two-column layout on larger screens. */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(40px, 9vw, 140px);
+  align-items: start;
+}
+
+/* Biography copy is kept narrow for comfortable reading. */
+.about-copy {
+  max-width: 520px;
+  padding-top: 20px;
+}
+
+/* Opening biography sentence receives extra visual emphasis. */
+.large-copy {
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  line-height: 1.08;
+}
+
+.about-copy > p:not(.large-copy) {
+  max-width: 400px;
+  margin-bottom: 36px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+/* Footer metadata is quiet and secondary to the portfolio content. */
+.site-footer {
+  width: min(calc(100% - 80px), 1440px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 32px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  /* Collapse the desktop sidebar into a compact mobile layout. */
+  .site-shell,
+  .site-footer {
+    width: min(calc(100% - 32px), var(--max-width));
+  }
+
+  .site-shell {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+    min-height: 0;
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .profile-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .portrait-sidebar {
+    width: 68px;
+    margin: 0;
+  }
+
+  .portrait-sidebar span {
+    font-size: 0.9rem;
+  }
+
+  .portrait-sidebar small,
+  .profile-description,
+  .sidebar-label {
+    display: none;
+  }
+
+  .profile-name {
+    margin-bottom: 2px;
+    font-size: 1rem;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 20px;
+    font-size: 0.62rem;
+  }
+
+  .sidebar-footer {
+    margin-top: 20px;
+  }
+
+  .section-heading,
+  .breakdown-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reel-section,
+  .about-section {
+    padding: 72px 0;
+  }
+
+  .breakdown-heading {
+    gap: 8px;
+  }
+
+  .reel-breakdown summary {
+    font-size: 1.05rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+/* Shared colors and sizing tokens for the editorial visual system. */
+:root {
+  --ink: #1a1a18;
+  --paper: #f3f0e8;
+  --accent: #5d9368;
+  --muted: #77736b;
+  --line: #d7d1c5;
+  --max-width: 1180px;
+}
+
+/* Use predictable sizing for every element. */
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling makes sidebar section links easier to follow. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base page canvas and typography. */
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+/* Links inherit the page color unless a component gives them an accent. */
+a {
+  color: inherit;
+}
+
+/* Desktop layout: fixed sidebar beside flexible portfolio content. */
+.site-shell {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: clamp(48px, 8vw, 120px);
+  width: min(calc(100% - 80px), 1440px);
+  margin-inline: auto;
+}
+
+/* Compact initials used as the sidebar brand mark. */
+.wordmark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+/* Accent color is shared by labels, actions, and highlighted text. */
+.wordmark span,
+.eyebrow,
+.text-link,
+.email-link {
+  color: var(--accent);
+}
+
+.sidebar {
+  /* Keep identity and navigation visible while the page scrolls. */
+  position: sticky;
+  top: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 28px 28px 28px 0;
+  border-right: 1px solid var(--line);
+}
+
+/* Profile identity and portrait placeholder. */
+
+.portrait-sidebar small {
+  padding: 0 12px;
+  font-size: 0.52rem;
+.profile-block {
+  margin: 72px 0 52px;
+}
+
+.portrait-sidebar {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.portrait-sidebar span {
+  font-size: 1.35rem;
+}
+}
+
+.profile-name {
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+}
+
+.profile-role {
+  flex-direction: column;
+  gap: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.07em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.text-link {
+.profile-description {
+  max-width: 180px;
+  margin: 18px 0 0;
+  color: var(--muted);
+.text-link:hover {
+}
+
+/* Small label separating profile information from navigation. */
+.sidebar-label {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Sidebar navigation is stacked vertically for quick scanning. */
+nav {
+  display: flex;
+.text-link {
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+nav a:hover,
+.text-link:hover,
+.email-link:hover {
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* Use a block highlight for the reference-inspired navigation interaction. */
+  background: var(--accent);
+  color: var(--paper);
+}
+
+nav a:hover span {
+  color: var(--paper);
+}
+
+/* Social and contact links sit at the bottom of the sidebar. */
+.sidebar-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: auto;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sidebar-footer a {
+  text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+  color: var(--accent);
+}
+
+/* Main sections fill the content column, not the sidebar. */
+main > section {
+  width: 100%;
+}
+
+/* Uppercase labels provide small structural signposts. */
+.eyebrow {
+  margin: 0 0 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Reset paragraph spacing before component-specific rules. */
+p {
+  margin-top: 0;
+}
+
+/* Display headings use a restrained editorial rhythm. */
+h2 {
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+h2 em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+/* Small uppercase action links contrast with the serif body copy. */
+.text-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Shared spacing for the reel and about sections. */
+.reel-section,
+.about-section {
+  padding: 56px 0 96px;
+  border-top: 1px solid var(--line);
+}
+
+/* Section heading pairs the numbered label with its large title. */
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+/* Secondary display headings remain smaller than the homepage statement. */
+h2 {
+  margin-bottom: 0;
+  font-size: clamp(3rem, 7vw, 6rem);
+  letter-spacing: -0.04em;
+}
+
+/* Temporary reel frame reserves the final video's aspect ratio. */
+.reel-placeholder {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Circular play cue centers attention on the future reel. */
+.play-mark {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 20px;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.reel-placeholder p {
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+}
+
+/* Reel notes use native disclosure controls, so they work without JavaScript. */
+.reel-breakdown {
+  margin-top: 56px;
+}
+
+.breakdown-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.breakdown-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.breakdown-intro {
+  max-width: 300px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.reel-breakdown details {
+  border-top: 1px solid var(--line);
+}
+
+.reel-breakdown details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.reel-breakdown summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+.reel-breakdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.reel-breakdown summary::after {
+  color: var(--accent);
+  content: "+";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.reel-breakdown details[open] summary::after {
+  content: "-";
+}
+
+.reel-breakdown summary span {
+  margin-right: 18px;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.reel-breakdown details > p {
+  max-width: 560px;
+  margin: -2px 48px 22px 38px;
+  color: var(--muted);
+  font-size: 1rem;
 }
 
 /* Notes explain where placeholder media should be added. */
@@ -471,17 +980,6 @@ h2 {
     margin-top: 20px;
   }
 
-  .intro {
-    min-height: 78vh;
-    padding: 64px 0 80px;
-  }
-
-  h1 {
-    margin-bottom: 48px;
-    font-size: clamp(3.2rem, 16vw, 6rem);
-  }
-
-  .intro-bottom,
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -490,6 +988,16 @@ h2 {
   .reel-section,
   .about-section {
     padding: 72px 0;
+  }
+
+  .breakdown-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .reel-breakdown summary {
+    font-size: 1.05rem;
   }
 
   .about-grid {
