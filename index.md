@@ -33,7 +33,6 @@ title: "Delaney Reed"
 					<a href="#top"><span>01</span> Home</a>
 					<a href="#reel"><span>02</span> Reel</a>
 					<a href="#about"><span>03</span> About</a>
-					<a href="#contact"><span>04</span> Contact</a>
 				</nav>
 				<div class="sidebar-footer">
 					<a href="assets/resume.pdf" download>Resume</a>
