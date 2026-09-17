@@ -74,8 +74,13 @@ a {
 }
 
 .portrait-sidebar {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
   max-width: 150px;
   margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .portrait-sidebar span {
@@ -258,33 +263,17 @@ h2 {
   letter-spacing: -0.04em;
 }
 
-/* Temporary reel frame reserves the final video's aspect ratio. */
-.reel-placeholder {
+/* Responsive Vimeo frame keeps the reel at its original 16:9 ratio. */
+.reel-video {
   aspect-ratio: 16 / 9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: var(--ink);
-  color: var(--paper);
+  overflow: hidden;
 }
 
-/* Circular play cue centers attention on the future reel. */
-.play-mark {
-  display: grid;
-  width: 68px;
-  height: 68px;
-  margin-bottom: 20px;
-  place-items: center;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  color: var(--accent);
-  font-size: 1.15rem;
-}
-
-.reel-placeholder p {
-  margin-bottom: 6px;
-  font-size: 1.6rem;
+.reel-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Reel notes use native disclosure controls, so they work without JavaScript. */
@@ -444,11 +433,10 @@ h2 {
     margin: 0;
   }
 
-  .portrait-sidebar span {
-    font-size: 0.9rem;
+  .portrait-sidebar {
+    aspect-ratio: 1;
   }
 
-  .portrait-sidebar small,
   .profile-description,
   .sidebar-label {
     display: none;

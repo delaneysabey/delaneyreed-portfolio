@@ -20,10 +20,7 @@ title: "Delaney Reed"
 			<aside class="sidebar">
 				<a class="wordmark" href="./">DR<span>.</span></a>
 				<div class="profile-block">
-					<div class="portrait-placeholder portrait-sidebar" role="img" aria-label="Portrait placeholder">
-						<span>Portrait</span>
-						<small>Add image to assets/images/profile.jpg</small>
-					</div>
+					<img class="profile-image portrait-sidebar" src="assets/images/profile.jpg" alt="Portrait of Delaney Reed">
 					<p class="profile-name">Delaney Reed</p>
 					<p class="profile-role">Technical Artist<br>Rigging / Tools / Pipeline</p>
 					<p class="profile-description">Building the systems behind the image.</p>
@@ -51,10 +48,14 @@ title: "Delaney Reed"
 					<p class="eyebrow">01 / Selected introduction</p>
 					<h2 id="reel-title">Showreel</h2>
 				</div>
-				<div class="reel-placeholder">
-					<span class="play-mark" aria-hidden="true">&#9654;</span>
-					<p>Showreel video</p>
-					<span class="placeholder-note">Add your reel to assets/reel.mp4</span>
+				<div class="reel-video">
+					<iframe
+						src="https://player.vimeo.com/video/1210959882?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+						allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+						allowfullscreen
+						loading="lazy"
+						referrerpolicy="strict-origin-when-cross-origin"
+						title="Delaney Reed Sabey Technical Artist Reel"></iframe>
 				</div>
 				<!-- Expandable notes let visitors explore the reel without leaving the page. -->
 				<div class="reel-breakdown">
