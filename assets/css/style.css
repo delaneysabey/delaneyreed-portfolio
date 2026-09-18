@@ -28,13 +28,15 @@ a {
   color: inherit;
 }
 
-/* Desktop layout: fixed sidebar beside flexible portfolio content. */
+/* Desktop layout: fixed sidebar beside the only scrolling content column. */
 .site-shell {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: clamp(48px, 8vw, 120px);
-  width: min(calc(100% - 80px), 1440px);
-  margin-inline: auto;
+  width: 100%;
+}
+
+/* Leave the fixed sidebar untouched while this column provides page scrolling. */
+main {
+  width: min(calc(100% - 368px), 1100px);
+  margin-left: 320px;
 }
 
 .wordmark {
@@ -51,15 +53,20 @@ a {
   color: var(--accent);
 }
 
-/* Keep identity and navigation visible while the page scrolls. */
+/* The sidebar stays the full height of the viewport while main content scrolls. */
 .sidebar {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 260px;
+  height: 100vh;
   top: 0;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   padding: 28px 28px 28px 0;
   border-right: 1px solid var(--line);
+  overflow: hidden;
 }
 
 .profile-block {
@@ -182,8 +189,8 @@ nav a:hover span {
 
 .sidebar-icon {
   display: grid;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -367,8 +374,8 @@ h2 em {
 
 /* Footer metadata is quiet and secondary to the portfolio content. */
 .site-footer {
-  width: min(calc(100% - 80px), 1440px);
-  margin: 0 auto;
+  width: min(calc(100% - 368px), 1100px);
+  margin: 0 48px 0 320px;
   display: flex;
   justify-content: space-between;
   padding: 20px 0 32px;
@@ -387,16 +394,31 @@ h2 em {
     width: min(calc(100% - 32px), var(--max-width));
   }
 
+  .site-footer {
+    margin: 0 auto;
+  }
+
   .site-shell {
     display: block;
   }
 
   .sidebar {
     position: relative;
+    left: auto;
+    bottom: auto;
+    width: auto;
+    height: auto;
+    z-index: auto;
     min-height: 0;
     padding: 20px 0;
     border-right: 0;
     border-bottom: 1px solid var(--line);
+    overflow: visible;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
   }
 
   .profile-block {
