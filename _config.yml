@@ -4,3 +4,7 @@ url: ""
 baseurl: ""
 
 markdown: kramdown
+
+# Keep the Markdown source in the repository without publishing it as a page.
+exclude:
+  - projects/student_accomplice.md

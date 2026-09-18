@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Accomplice | Delaney Reed</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="wordmark" href="../">DR<span>.</span></a>
+      <div class="profile-block">
+        <img class="profile-image portrait-sidebar" src="../assets/images/profile.jpg" alt="Portrait of Delaney Reed">
+        <p class="profile-name">Delaney Reed</p>
+        <p class="profile-role">Technical Artist<br>Tools / Rigging</p>
+        <p class="profile-description">Part programmer, part artist, mostly problem solver</p>
+      </div>
+      <p class="sidebar-label">Explore</p>
+      <nav aria-label="Main navigation">
+        <a href="../"><span>01</span> Home</a>
+        <a href="../#reel"><span>02</span> Reel</a>
+        <a href="../#projects"><span>03</span> Projects</a>
+        <a href="../#about"><span>04</span> About</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-links" aria-label="External links">
+          <a class="sidebar-icon" href="../assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open resume"><i class="fa-solid fa-download"></i></a>
+          <a class="sidebar-icon" href="mailto:delaneyreed2001@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a class="sidebar-icon" href="https://www.linkedin.com/in/delaney-reed-sabey-953110182/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="sidebar-icon" href="https://github.com/delaneysabey" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="project-detail">
+      <a class="back-link" href="../#projects">&#8592; Back to projects</a>
+      <p class="eyebrow">01 / Project detail</p>
+      <h1>Student Accomplice</h1>
+      <p class="project-detail-meta">Character Rigging · Rigging Tools · Pipeline</p>
+      <div class="project-video">
+        <iframe
+          src="https://www.youtube.com/embed/Vn0QWdiWLqk"
+          title="Student Accomplice film"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <div class="project-detail-copy">
+        <p><em>Student Accomplice</em> is an animated short created by a team of students at Brigham Young University's Center for Animation. The film follows a student driver whose driving test takes an unexpected turn when a bank robber commandeers the car.</p>
+        <p>I worked on the film as part of a three-person rigging team, with my primary focus on character rigging and developing tools to make the rigging process faster and more reusable across the production. The project gave me the opportunity to take a character from rig development through production while working directly with animators and adapting the rig based on their feedback.</p>
+
+        <h2>Ed Character Rig</h2>
+        <p>My primary character responsibility was <strong>Ed, the driving instructor</strong>. I built and maintained his character rig, including the controls and deformation systems needed by the animation team.</p>
+        <p>Working on a production character taught me that a successful rig is about more than getting the character to move correctly. The rig needed to be intuitive for animators, hold up across the poses required by the film, and continue evolving as new animation needs appeared.</p>
+        <p>Throughout production, I worked with animators to troubleshoot issues, respond to feedback, and improve the rig as it was used in shots.</p>
+
+        <h2>Procedural Arm Rigging Tool</h2>
+        <p>Alongside character rigging, I developed a <strong>Python-based arm rigging tool for Maya</strong> to automate repetitive parts of our rigging workflow.</p>
+        <p>The tool generates the underlying systems for an arm rig, including <strong>IK/FK functionality, finger controls, roll joints, follow systems, and supporting rig structures</strong>. Instead of rebuilding these components manually for every character, the script allowed the team to generate a consistent starting point and focus more of our time on character-specific problems and deformation.</p>
+        <p>Developing this tool pushed my interests beyond individual character rigs and toward <strong>technical art, tools, and pipeline development</strong>: looking for repeated problems in an artist workflow and finding ways to solve them through code.</p>
+
+        <h2>Stretchy Suspenders</h2>
+        <p>Ed's costume presented another rigging challenge: his suspenders needed to remain attached to his body while stretching and responding naturally as he moved.</p>
+        <p>I developed a custom <strong>stretchy suspender rig</strong> that gave the suspenders the flexibility required by animation while maintaining their relationship to the character.</p>
+        <p>It was a small part of the finished character, but one of my favorite technical challenges on the film. It required finding a solution specifically for the needs of the design rather than relying on a standard character-rigging setup.</p>
+
+        <h2>Working in Production</h2>
+        <p><em>Student Accomplice</em> was my first opportunity to experience character rigging as part of a larger collaborative animation pipeline. My work had to function not only in my own Maya scene, but also for the animators using the characters and within the technical requirements of the film as a whole.</p>
+        <p>That experience shaped the way I approach technical art today. I became especially interested in the space between artists and technology: building reliable systems, listening to the people who use them, and developing tools that make the creative process easier.</p>
+
+        <h2>Recognition</h2>
+        <p><em>Student Accomplice</em> went on to receive international recognition, including:</p>
+        <ul>
+          <li><strong>College Television Award - Animation</strong>, 44th College Television Awards</li>
+          <li><strong>Bronze - Animation</strong>, 2024 Student Academy Awards</li>
+          <li><strong>Film of the Year - 3D Animation</strong>, 2024 Rookie Awards</li>
+          <li><strong>People's Choice Award</strong>, 2024 Rookie Awards</li>
+          <li><strong>Visual Effects Society Award Nominee</strong>, 23rd Annual VES Awards</li>
+        </ul>
+        <p>The film's recognition was an incredible conclusion to a project built through the collaboration of students across animation, computer science, design, music, and other disciplines.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
