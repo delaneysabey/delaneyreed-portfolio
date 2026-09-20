@@ -1,11 +1,49 @@
 /* Shared colors and sizing tokens for the editorial visual system. */
 :root {
-  --ink: #1a1a18;
-  --paper: #f3f0e8;
-  --accent: #5d9368;
-  --muted: #77736b;
-  --line: #d7d1c5;
+  color-scheme: light;
+  --ink: #12263a;
+  --paper: #eff7ff;
+  --accent: #6e7dab;
+  --muted: #807182;
+  --line: color-mix(in srgb, var(--accent) 30%, var(--paper));
   --max-width: 1180px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #eff7ff;
+  --paper: #12263a;
+  --accent: #b2bce0;
+  --muted: #bfb1c1;
+}
+
+.sidebar-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.theme-toggle {
+  flex-shrink: 0;
+  padding: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 * {
@@ -64,7 +102,7 @@ main {
   top: 0;
   display: flex;
   flex-direction: column;
-  padding: 28px 28px 28px 0;
+  padding: 28px;
   border-right: 1px solid var(--line);
   overflow: hidden;
 }
@@ -146,12 +184,12 @@ nav a span {
 }
 
 nav a:hover {
-  background: var(--accent);
-  color: var(--paper);
+  background: #ffc052;
+  color: #12263a;
 }
 
 nav a:hover span {
-  color: var(--paper);
+  color: #12263a;
 }
 
 .text-link {
@@ -208,8 +246,8 @@ nav a:hover span {
 
 .sidebar-icon:hover {
   border-color: var(--accent);
-  background: var(--accent);
-  color: var(--paper);
+  background: #ffc052;
+  color: #12263a;
 }
 
 .sidebar-copyright {
@@ -370,7 +408,7 @@ h2 em {
   overflow: hidden;
   padding: 20px;
   border: 1px solid var(--line);
-  background: #e5e0d5;
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
   text-decoration: none;
   transition: background-color 180ms ease, color 180ms ease;
 }
@@ -406,8 +444,8 @@ h2 em {
   left: 12px;
   padding: 14px;
   transform: translateY(120%);
-  background: var(--accent);
-  color: var(--paper);
+  background: #ffc052;
+  color: #12263a;
   font-size: 0.9rem;
   line-height: 1.25;
   transition: transform 180ms ease;
@@ -437,20 +475,28 @@ h2 em {
   padding: 14px 20px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #e5e0d5;
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
   text-decoration: none;
   transition: background-color 180ms ease, border-color 180ms ease;
 }
 
 .blog-card:hover,
 .blog-card:focus-visible {
-  background: #d6e3d3;
+  background: #ffc052;
   border-color: var(--accent);
+  color: #12263a;
 }
 
 .blog-card:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.blog-card:hover .blog-date,
+.blog-card:hover p,
+.blog-card:focus-visible .blog-date,
+.blog-card:focus-visible p {
+  color: #12263a;
 }
 
 .blog-card .blog-date {
@@ -538,7 +584,7 @@ h2 em {
   line-height: 1.08;
 }
 
-.about-copy > p:not(.large-copy) {
+.about-copy > p {
   max-width: 400px;
   margin-bottom: 36px;
   color: var(--muted);
