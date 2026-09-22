@@ -16,11 +16,21 @@ Throughout production, I worked with animators to troubleshoot issues, respond t
 
 ## Procedural Arm Rigging Tool
 
-Alongside character rigging, I developed a **Python-based arm rigging tool for Maya** to automate repetitive parts of our rigging workflow.
+Alongside character rigging, I developed a Python-based arm rigging tool for Maya as part of our team's larger auto-rigging system. We divided the system between the three members of the rigging team, developing tools for the face, legs, and arms before combining them into a unified workflow. I was responsible for developing the arm system.
 
 The tool generates the underlying systems for an arm rig, including **IK/FK functionality, finger controls, roll joints, follow systems, and supporting rig structures**. Instead of rebuilding these components manually for every character, the script allowed the team to generate a consistent starting point and focus more of our time on character-specific problems and deformation.
 
 Developing this tool was one of the experiences that pushed my interests beyond individual character rigs and toward **technical art, tools, and pipeline development**—looking for repeated problems in an artist workflow and finding ways to solve them through code.
+
+## Background Character Workflow
+
+Unlike many previous BYU Animation capstone films, Student Accomplice takes place in a populated city and required a cast of background characters in addition to its three main characters. Supporting that larger cast meant our rigging team needed a workflow that could scale beyond individually rigging, skinning, and animating every character.
+
+We developed a Universal Base Mesh (UBM) system in which the main and background characters shared identical topology. This allowed us to transfer skin weights between characters rather than skinning each background character from scratch.
+
+The UBM worked in tandem with our auto-rigging system to create a much more efficient character pipeline. Once a background character was modeled, we could transfer existing skinning, generate a standardized rig using our tools, and reuse or retarget animation because the characters shared a consistent rig structure.
+
+Together, these systems allowed our three-person rigging team to support a larger cast than was typical of previous BYU capstone productions and established a more automated approach to character setup for Student Accomplice.
 
 ## Stretchy Suspenders
 
