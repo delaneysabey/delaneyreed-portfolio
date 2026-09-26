@@ -104,11 +104,11 @@ main {
   flex-direction: column;
   padding: 28px;
   border-right: 1px solid var(--line);
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .profile-block {
-  margin: 72px 0 52px;
+  margin: 36px 0 28px;
 }
 
 /* Frame the circular portrait on the subject rather than the photo center. */
@@ -183,13 +183,43 @@ nav a span {
   font-size: 0.55rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current] {
   background: #773344;
   color: #eff7ff;
 }
 
-nav a:hover span {
+nav a:hover span,
+nav a:focus-visible span,
+nav a[aria-current] span {
   color: #eff7ff;
+}
+
+.sidebar-secondary {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.sidebar nav {
+  gap: 8px;
+}
+
+.sidebar nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.sidebar-footer {
+  padding-top: 24px;
+}
+
+.reel-intro {
+  max-width: 650px;
+  margin: 0 0 28px;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.5;
 }
 
 .text-link {
@@ -363,14 +393,14 @@ h2 em {
 /* Reel notes use native disclosure controls, so they work without JavaScript. */
 .reel-breakdown {
   margin-top: 56px;
-  border: 1px solid #12263a;
+  border: 1px solid var(--line);
   border-radius: 12px;
-  background: color-mix(in srgb, var(--accent) 8%, var(--paper));
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
   box-shadow: 0 3px 8px rgb(18 38 58 / 15%);
 }
 
 .reel-breakdown[open] {
-  border-bottom: 6px solid #12263a;
+  border-bottom: 6px solid var(--line);
 }
 
 .reel-breakdown > details {
@@ -467,8 +497,8 @@ h2 em {
   padding: 18px 20px;
   border: 0;
   border-radius: 10px;
-  background: #12263a;
-  color: #eff7ff;
+  background: color-mix(in srgb, var(--accent) 14%, var(--paper));
+  color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
@@ -479,9 +509,9 @@ h2 em {
 
 .reel-breakdown > .breakdown-toggle:hover,
 .reel-breakdown > .breakdown-toggle:focus-visible {
-  border-color: #24435f;
-  background: #24435f;
-  color: #eff7ff;
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
 }
 
 .reel-breakdown > .breakdown-toggle::after {
@@ -964,8 +994,13 @@ h2 em {
 
   .sidebar nav {
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 8px 16px;
     font-size: 0.62rem;
+  }
+
+  .sidebar nav a {
+    margin-left: 0;
   }
 
   .sidebar-footer {
