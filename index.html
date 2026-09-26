@@ -59,47 +59,49 @@
 						title="Delaney Reed Sabey Technical Artist Reel"></iframe>
 				</div>
 				<!-- Expandable notes let visitors explore the reel without leaving the page. -->
-				<div class="reel-breakdown">
-					<div class="breakdown-heading">
-						<p class="eyebrow">Reel breakdown</p>
-					</div>
+				<details class="reel-breakdown">
+					<summary class="breakdown-toggle">Reel breakdown</summary>
 					<details>
 						<summary><span>01</span> Ed Rig</summary>
-						<p><strong>Student Accomplice</strong> | 0:00-0:09<br><br>Main character rig for a BYU senior capstone short film. I helped create and maintain the rig for Ed, one of the film's three main characters. Throughout production, I collaborated closely with animators to refine the rig for intuitive controls, animator-friendly workflows, and strong deformations based on shot feedback.<br><br>I also rigged several character props, including the trash can Ed falls into and his clipboard and pen, ensuring they could be easily controlled and integrated into his performance.<br><br><strong>Tools / Software:</strong> Maya, Python. Parts of the rigging workflow were automated using Python tools I developed for Maya.</p>
+						<p><strong>Student Accomplice</strong> | 0:02-0:16<br><br>I built and maintained the rig for Ed in <em>Student Accomplice</em>, working with animators to refine controls and deformations throughout production. <a class="breakdown-link" href="projects/student-accomplice.html#ed-character-rig">Read more about Ed Character Rig <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
 						<summary><span>02</span> Stretchy Suspender Rig</summary>
-						<p><strong>Student Accomplice</strong> | 0:09-0:10<br><br>Custom stretchy suspender rig developed for <em>Student Accomplice</em>. I designed and implemented a custom rig for Ed's suspenders, which needed to stretch dramatically during a car-chase sequence while remaining highly art-directable for animators.<br><br>The final system uses primary Bezier controls to define the overall position and curvature of the suspenders, with additional secondary controls that follow the primary controls while allowing finer shape adjustments.<br><br>The system was developed iteratively with the animation team. Based on animator feedback and shot requirements, I refined the controls and behavior to balance ease of use with the flexibility needed to achieve the exaggerated shapes required by the sequence.<br><br><strong>Tools / Software:</strong> Maya.</p>
+						<p><strong>Student Accomplice</strong> | 0:16-0:22<br><br>I developed a custom stretchy suspender rig for Ed, giving animators flexible controls while keeping the suspenders attached to his body. <a class="breakdown-link" href="projects/student-accomplice.html#stretchy-suspenders">Read more about Stretchy Suspenders <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
 						<summary><span>03</span> Arm Autorigger</summary>
-						<p><strong>Arm autorigging tool</strong> | 0:10-0:14<br><br>As part of a three-person rigging team, I helped develop a modular autorigger by taking ownership of the arm and hand system. Given an existing arm and hand joint chain, my Python tool automatically builds the necessary rig controls and supporting systems.<br><br>The resulting rig includes IK/FK switching for the arm and independent IK/FK switching for each finger, allowing animators to use any combination of IK and FK across the arm and fingers. Developing the system procedurally also made iteration faster: when changes were requested, I could update the script and rebuild the rig rather than recreating it manually.<br><br><strong>Tools / Software:</strong> Python, Maya.</p>
+						<p><strong>Student Accomplice</strong> | 0:22-0:40<br><br>I developed the Python arm system for our modular Maya autorigger, automating IK/FK controls, finger controls, roll joints, and follow systems. <a class="breakdown-link" href="projects/student-accomplice.html#procedural-arm-rigging-tool">Read more about Procedural Arm Rigging Tool <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
-						<summary><span>04</span> Nolan &amp; Nelson</summary>
-						<p><strong>Personal project</strong> | 0:15-0:25<br><br><em>Nolan &amp; Nelson</em> is an ongoing solo animated web series created entirely in Blender. I handle the full 3D production pipeline: sculpting and modeling the two dinosaur characters, building and rigging the characters, creating environments, animating shots, and editing the final videos. I also developed a procedural grass tool to streamline environment creation.<br><br>I began the project with very little Blender experience and learned the software while producing the first short. The project has expanded my experience across the 3D pipeline, helped me explore new creative and technical workflows, and made me comfortable working in a new software. As the series continues, I plan to create additional episodes and develop more tools to automate my one-person production workflow.<br><br><strong>Tools / Software:</strong> Blender, Python.</p>
+						<summary><span>04</span> Background Character Workflow</summary>
+						<p><strong>Student Accomplice</strong> | 0:40-0:47<br><br>Our rigging team combined a Universal Base Mesh with shared topology and modular auto-rigging tools to transfer skin weights, generate consistent rigs, and reuse animation across a larger cast. <a class="breakdown-link" href="projects/student-accomplice.html#background-character-workflow">Read more about Background Character Workflow <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
 						<summary><span>05</span> Ninja Rig</summary>
-						<p><strong>Shrineflow</strong> | 0:25-0:34<br><br>I created and maintained the rig for the Ninja character in <em>Shrineflow</em>, a BYU senior capstone video game project. For this rig, I reused and adapted rigging systems that my team and I had previously developed for <em>Student Accomplice</em>, applying existing tools and workflows to a new character and a different type of production.<br><br><strong>Tools / Software:</strong> Maya.</p>
+						<p><strong>Shrineflow</strong> | 0:47-0:58<br><br>I created and maintained the Ninja character rig for <em>Shrineflow</em>, adapting our Maya and Python rigging workflow from <em>Student Accomplice</em> for a game production. <a class="breakdown-link" href="projects/ninja-rig.html#ninja-character-rig">Read more about Ninja Character Rig <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
-						<summary><span>06</span> Crab Pot</summary>
-						<p><strong>BYU animation coursework assignment</strong> | 0:34-0:39<br><br>A mimic character created for a BYU animation assignment, in which an ordinary kitchen pot transforms to reveal itself as a crab-like creature. I created the character from modeling through final animation, including modeling, rigging, and animating the transforming crab pot. I also modeled the surrounding environment and textured the character and environment assets using Substance Painter.<br><br>For the final shot, I created a cloth simulation in Maya for the curtains blowing in the background and rendered the scene using Arnold.<br><br><strong>Tools / Software:</strong> Maya, Substance Painter, Arnold.</p>
+						<summary><span>06</span> Midas Cinematic</summary>
+						<p><strong>DNEG Internship</strong> | 0:58-1:12<br><br>During my DNEG internship, I helped create a team cinematic in Unreal Engine 5. My main contribution was custom clothing for Midas, built in Marvelous Designer and skinned in Maya, alongside motion-capture and retargeting work. <a class="breakdown-link" href="projects/midas-cinematic.html#midas-cinematic">Read more about Midas Cinematic <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
-						<summary><span>07</span> Still Life</summary>
-						<p><strong>BYU animation coursework assignment</strong> | 0:39-0:43<br><br>A 3D still life featuring an unfinished wooden clock surrounded by tools on a workbench. I created the scene from modeling through final render, using the environment to tell a story and make the clock feel actively in the process of being carved and assembled.<br><br>I modeled the scene in Maya and textured the assets in Substance Painter. For the work gloves, I used Houdini to create a cloth simulation with natural wrinkles and folds. I developed the carved and engraved details of the unfinished wood through texturing in Substance Painter before lighting and rendering the final scene with Arnold in Maya.<br><br><strong>Tools / Software:</strong> Maya, Substance Painter, Houdini, Arnold.</p>
+						<summary><span>07</span> Custom MetaHuman Clothing Pipeline</summary>
+						<p><strong>MetaHuman Jerusalem</strong> | 1:12-1:20<br><br>I developed a custom clothing workflow for a virtual Jerusalem project, moving garments from Marvelous Designer through Maya skinning and Substance texturing into Unreal Engine for use with MetaHumans. <a class="breakdown-link" href="projects/metahuman-clothing.html#custom-metahuman-clothing">Read more about Custom MetaHuman Clothing <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
-						<summary><span>08</span> Custom MetaHuman Clothing</summary>
-						<p><strong>Unreal Engine ancient Jerusalem recreation</strong> | 0:43-0:50<br><br>As a student employee for the BYU Religion Department, I contributed to a virtual recreation of ancient Jerusalem during the time of Christ. My role included creating MetaHuman characters and developing custom clothing for them.<br><br>I created the garments in Marvelous Designer and textured them using Substance Painter and Substance Designer. I used Substance Designer to develop custom striped patterns that could be varied across different garments and characters. I then brought the clothing into Maya, bound it to the MetaHuman skeleton, and refined the skin weights to minimize clipping and unwanted deformations during movement. Finally, I integrated the finished clothing and characters into Unreal Engine for use in the virtual environment.<br><br><strong>Tools / Software:</strong> Unreal Engine, Marvelous Designer, Maya, Substance Painter, Substance Designer.</p>
+						<summary><span>08</span> Crab Pot Mimic</summary>
+						<p><strong>BYU animation coursework</strong> | 1:20-1:24<br><br>I created this transforming kitchen-pot character from modeling through final animation, textured the scene in Substance Painter, and simulated the curtains in Maya before rendering with Arnold. <a class="breakdown-link" href="projects/crab-pot.html#crab-pot">Read more about Crab Pot <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
 					<details>
-						<summary><span>09</span> Midas Cinematic - DNEG Internship</summary>
-						<p><strong>0:50-0:59</strong><br><br>During my internship at DNEG in London, I worked with a team of four other interns to create a cinematic in Unreal Engine. With access to DNEG's motion capture studio and mentorship from DNEG artists, we recorded motion capture performances and retargeted the animation onto MetaHuman characters.<br><br>Our cinematic retold the story of King Midas, following Midas as he discovers his ability to turn objects to gold before accidentally turning his daughter to gold.<br><br>My primary contribution was creating Midas's custom clothing in Marvelous Designer and skinning it to the character in Maya, building on the clothing workflow I had previously developed for the Jerusalem MetaHuman project. Through the project, I also gained hands-on experience with motion capture, retargeting, Unreal Engine, and virtual production workflows.<br><br><strong>Tools:</strong> Unreal Engine, Marvelous Designer, Maya, Substance Painter.</p>
+						<summary><span>09</span> Stylized Grass Tool</summary>
+						<p><strong>Nolan &amp; Nelson</strong> | 1:24-1:37<br><br>I built a procedural grass system with Blender Geometry Nodes and a Python add-on to automate setup and give artists controls for density, randomization, image selection, and blade scale. <a class="breakdown-link" href="projects/nolan-and-nelson.html#stylized-grass-tool">Read more about Stylized Grass Tool <span aria-hidden="true">&#8599;</span></a></p>
 					</details>
-				</div>
+					<details>
+						<summary><span>10</span> Nolan &amp; Nelson</summary>
+						<p><strong>Personal project</strong> | 1:37-1:41<br><br>I create this personal animated series in Blender, handling modeling, rigging, animation, environments, lighting, rendering, editing, and sound while improving the workflow with each episode. <a class="breakdown-link" href="projects/nolan-and-nelson.html#nolan-and-nelson">Read more about Nolan &amp; Nelson <span aria-hidden="true">&#8599;</span></a></p>
+					</details>
+				</details>
 			</section>
 
 			<!-- Project cards provide quick previews and link to full detail pages. -->

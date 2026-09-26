@@ -51,13 +51,13 @@
         <p><em>Student Accomplice</em> is an animated short created by a team of students at Brigham Young University's Center for Animation. The film follows a student driver whose driving test takes an unexpected turn when a bank robber commandeers the car.</p>
         <p>I worked on the film as part of a three-person rigging team, with my primary focus on character rigging and developing tools to make the rigging process faster and more reusable across the production. The project gave me the opportunity to take a character from rig development through production while working directly with animators and adapting the rig based on their feedback.</p>
 
-        <h2>Ed Character Rig</h2>
+        <h2 id="ed-character-rig">Ed Character Rig</h2>
         <img class="project-detail-image" src="../assets/images/ed_rig_turnaround.gif" alt="Animated turnaround of Ed's character rig" loading="lazy">
         <p>My primary character responsibility was <strong>Ed, the driving instructor</strong>. I built and maintained his character rig, including the controls and deformation systems needed by the animation team.</p>
         <p>Working on a production character taught me that a successful rig is about more than getting the character to move correctly. The rig needed to be intuitive for animators, hold up across the poses required by the film, and continue evolving as new animation needs appeared.</p>
         <p>Throughout production, I worked with animators to troubleshoot issues, respond to feedback, and improve the rig as it was used in shots.</p>
 
-        <h2>Procedural Arm Rigging Tool</h2>
+        <h2 id="procedural-arm-rigging-tool">Procedural Arm Rigging Tool</h2>
         <img class="project-detail-image" src="../assets/images/arm_auto_rig_gif.gif" alt="Animated demonstration of the procedural arm rigging tool" loading="lazy">
         <p>Alongside character rigging, I developed a Python-based arm rigging tool for Maya as part of our team's larger auto-rigging system. We divided the system between the three members of the rigging team, developing tools for the face, legs, and arms before combining them into a unified workflow. I was responsible for developing the arm system.</p>
         <p>The tool generates the underlying systems for an arm rig, including <strong>IK/FK functionality, finger controls, roll joints, follow systems, and supporting rig structures</strong>. Instead of rebuilding these components manually for every character, the script allowed the team to generate a consistent starting point and focus more of our time on character-specific problems and deformation.</p>
@@ -67,14 +67,14 @@
           <a class="repo-button" href="https://github.com/delaneysabey/maya-arm-auto-rigger/tree/main" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>View GitHub repository</span><span aria-hidden="true">&#8599;</span></a>
         </p>
 
-        <h2>Background Character Workflow</h2>
+        <h2 id="background-character-workflow">Background Character Workflow</h2>
         <p>Unlike many previous BYU Animation capstone films, Student Accomplice takes place in a populated city and required a cast of background characters in addition to its three main characters. Supporting that larger cast meant our rigging team needed a workflow that could scale beyond individually rigging, skinning, and animating every character.</p>
         <p>We developed a Universal Base Mesh (UBM) system in which the main and background characters shared identical topology. This allowed us to transfer skin weights between characters rather than skinning each background character from scratch.</p>
         <img class="project-detail-image" src="../assets/images/universal_base_mesh.gif" alt="Animated demonstration of the Universal Base Mesh system" loading="lazy">
         <p>The UBM worked in tandem with our auto-rigging system to create a much more efficient character pipeline. Once a background character was modeled, we could transfer existing skinning, generate a standardized rig using our tools, and reuse or retarget animation because the characters shared a consistent rig structure.</p>
         <p>Together, these systems allowed our three-person rigging team to support a larger cast than was typical of previous BYU capstone productions and established a more automated approach to character setup for Student Accomplice.</p>
 
-        <h2>Stretchy Suspenders</h2>
+        <h2 id="stretchy-suspenders">Stretchy Suspenders</h2>
         <img class="project-detail-image" src="../assets/images/suspender_car_chase.gif" alt="Stretchy suspender rig in the car chase sequence" loading="lazy">
         <img class="project-detail-image" src="../assets/images/suspender_door.gif" alt="Stretchy suspender rig in the door sequence" loading="lazy">
         <p>Ed's costume presented another rigging challenge: his suspenders needed to remain attached to his body while stretching and responding naturally as he moved.</p>
