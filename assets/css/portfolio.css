@@ -113,14 +113,14 @@ main {
 
 /* Frame the circular portrait on the subject rather than the photo center. */
 .portrait-sidebar {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  max-width: 150px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 72% 72%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    max-width: none;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 72% 72%;
 }
 
 .profile-name {
