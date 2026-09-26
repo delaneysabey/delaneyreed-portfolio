@@ -184,12 +184,12 @@ nav a span {
 }
 
 nav a:hover {
-  background: #ffc052;
-  color: #12263a;
+  background: #773344;
+  color: #eff7ff;
 }
 
 nav a:hover span {
-  color: #12263a;
+  color: #eff7ff;
 }
 
 .text-link {
@@ -216,8 +216,8 @@ nav a:hover span {
   padding: 14px 20px;
   border: 1px solid transparent;
   border-radius: 12px;
-  background: #ffc052;
-  color: #12263a;
+  background: #773344;
+  color: #eff7ff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
@@ -231,7 +231,7 @@ nav a:hover span {
 
 .repo-button:hover,
 .repo-button:focus-visible {
-  background: #ffd486;
+  background: #914357;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgb(18 38 58 / 18%);
 }
@@ -291,8 +291,8 @@ nav a:hover span {
 
 .sidebar-icon:hover {
   border-color: var(--accent);
-  background: #ffc052;
-  color: #12263a;
+  background: #773344;
+  color: #eff7ff;
 }
 
 .sidebar-copyright {
@@ -508,8 +508,8 @@ h2 em {
   left: 12px;
   padding: 14px;
   transform: translateY(120%);
-  background: #ffc052;
-  color: #12263a;
+  background: #773344;
+  color: #eff7ff;
   font-size: 0.9rem;
   line-height: 1.25;
   transition: transform 180ms ease;
@@ -546,9 +546,9 @@ h2 em {
 
 .blog-card:hover,
 .blog-card:focus-visible {
-  background: #ffc052;
+  background: #773344;
   border-color: var(--accent);
-  color: #12263a;
+  color: #eff7ff;
 }
 
 .blog-card:focus-visible {
@@ -560,7 +560,7 @@ h2 em {
 .blog-card:hover p,
 .blog-card:focus-visible .blog-date,
 .blog-card:focus-visible p {
-  color: #12263a;
+  color: #eff7ff;
 }
 
 .blog-card .blog-date {
